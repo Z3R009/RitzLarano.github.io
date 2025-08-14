@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+section {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project-card {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    width: calc(50% - 15px);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
