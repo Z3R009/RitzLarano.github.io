@@ -11,64 +11,85 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="profile-container">
-            <img src="profile.jpg" alt="Ritz Laraño" class="profile-img">
-            <h1>Ritz P. Laraño</h1>
-            <p>Bachelor of Science in Information Technology - Major in Business Analytics</p>
-            <p>📍 Koronadal City, South Cotabato | 📧 ritzlarano@gmail.com</p>
-            <p><a href="https://github.com/Z3R009" target="_blank">GitHub</a></p>
+        <div class="container">
+            <div class="profile-info">
+                <img src="img/2X2.png" alt="Ritz Laraño" class="profile-img">
+                <div>
+                    <h1>Ritz P. Laraño</h1>
+                    <p class="tagline">BSIT - Major in Business Analytics</p>
+                    <p>📍 Koronadal City, South Cotabato</p>
+                    <p>📧 <a href="mailto:ritzlarano@gmail.com">ritzlarano@gmail.com</a></p>
+                    <p>💻 <a href="https://github.com/Z3R009" target="_blank">github.com/Z3R009</a></p>
+                </div>
+            </div>
         </div>
     </header>
 
-    <!-- RESUME SECTION -->
+    <!-- RESUME -->
     <section id="resume">
-        <h2>Resume</h2>
-        <div class="resume-section">
-            <h3>Education</h3>
-            <p><strong>2021-2025:</strong> BSIT Major in Business Analytics, South East Asian Institute of Technology,
-                Inc.</p>
+        <div class="container">
+            <h2>Resume</h2>
+            <div class="resume-section">
+                <h3>Education</h3>
+                <p>Bachelor of Science in Information Technology - Major in Business
+                    Analytics, South East Asian Institute of Technology, Inc.</p>
 
-            <h3>Technical Skills</h3>
-            <ul>
-                <li>C, Java, PHP, Python</li>
-                <li>Database: XAMPP</li>
-                <li>IDE: VS Code, NetBeans</li>
-                <li>Graphics: Canva, GIMP</li>
-            </ul>
+                <h3>Technical Skills</h3>
+                <ul>
+                    <h4>Programming Language</h4>
+                    <li>C</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <h4>Database Management</h4>
+                    <li>XAMPP</li>
+                    <li>WAMPP</li>
+                    <h4>IDE(Integrated Development Environment)</h4>
+                    <li>Visual Studio Code</li>
+                    <li>Netbeans</li>
+                    <h4>Graphics Design</h4>
+                    <li>Canva</li>
+                    <h4>GIMP</h4>
+                    <li>Data Visualization</li>
+                </ul>
 
-            <h3>Experience & Certifications</h3>
-            <ul>
-                <li>IT Intern, DTI (Feb-May 2025)</li>
-                <li>Hack for Gov 2 & 3 Participant</li>
-                <li>Intro to Python Programming (DICT)</li>
-                <li>Civil Service Exam Passer (March 2025)</li>
-                <li>Co-Authored Published Thesis (Nov 2024)</li>
-            </ul>
+                <h3>Experience & Certifications</h3>
+                <ul>
+                    <li>IT Intern, Department of Trade and Industry (Feb-May 2025)</li>
+                    <li>Hack for Gov 2 & 3 Participant</li>
+                    <li>Intro to Python Programming (DICT)</li>
+                    <li>Civil Service Exam Passer (March 2025)</li>
+                    <li>Co-Authored Published Thesis (Nov 2024)</li>
+                </ul>
+            </div>
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
+    <!-- PROJECTS -->
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-list">
-            <!-- Example Project -->
-            <div class="project-card">
-                <img src="project1.jpg" alt="Project 1">
-                <h3>Local Pageant Tabulation System</h3>
-                <p>Designed a tabulation system to handle event scoring and ticketing efficiently.</p>
-            </div>
-
-            <div class="project-card">
-                <img src="project2.jpg" alt="Project 2">
-                <h3>Water Billing Management System</h3>
-                <p>Created a system for managing water consumption, billing, and reporting.</p>
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list" id="project-list">
+                <!-- JS will populate here -->
             </div>
         </div>
     </section>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img">
+        <div class="lightbox-controls">
+            <button id="prev">&#10094;</button>
+            <button id="next">&#10095;</button>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2025 Ritz Laraño | Portfolio Website</p>
+        <div class="container">
+            <p>© 2025 Ritz Laraño | Portfolio Website</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
