@@ -29,41 +29,76 @@
     <section id="resume">
         <div class="container">
             <h2>Resume</h2>
-            <div class="resume-section">
-                <h3>Education</h3>
-                <p>Bachelor of Science in Information Technology - Major in Business
-                    Analytics, South East Asian Institute of Technology, Inc.</p>
+            <div class="resume-grid">
+                <!-- LEFT COLUMN: Skills -->
+                <div class="resume-column">
+                    <h2>Technical Skills</h2>
+                    <ul>
+                        <h3>Programming Language</h3>
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>PHP</li>
+                        <li>Python</li>
 
-                <h3>Technical Skills</h3>
-                <ul>
-                    <h4>Programming Language</h4>
-                    <li>C</li>
-                    <li>Java</li>
-                    <li>PHP</li>
-                    <li>Python</li>
-                    <h4>Database Management</h4>
-                    <li>XAMPP</li>
-                    <li>WAMPP</li>
-                    <h4>IDE(Integrated Development Environment)</h4>
-                    <li>Visual Studio Code</li>
-                    <li>Netbeans</li>
-                    <h4>Graphics Design</h4>
-                    <li>Canva</li>
-                    <h4>GIMP</h4>
-                    <li>Data Visualization</li>
-                </ul>
+                        <br>
+                        <h3>Database Management</h3>
+                        <li>XAMPP</li>
+                        <li>WAMPP</li>
 
-                <h3>Experience & Certifications</h3>
-                <ul>
-                    <li>IT Intern, Department of Trade and Industry (Feb-May 2025)</li>
-                    <li>Hack for Gov 2 & 3 Participant</li>
-                    <li>Intro to Python Programming (DICT)</li>
-                    <li>Civil Service Exam Passer (March 2025)</li>
-                    <li>Co-Authored Published Thesis (Nov 2024)</li>
-                </ul>
+                        <br>
+                        <h3>IDE (Integrated Development Environment)</h3>
+                        <li>Visual Studio Code</li>
+                        <li>NetBeans</li>
+
+                        <br>
+                        <h3>Graphics Design</h3>
+                        <li>Canva</li>
+                        <li>GIMP</li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT COLUMN: Experience -->
+                <div class="resume-column">
+                    <h2>Experience & Certifications</h2>
+                    <ul>
+                        <h3>Freelance Graphic Designer (June 1-15, 2025)</h3>
+                        <strong>Department of Trade and Industry (DTI)</strong>
+                        <li>Created social media cards for Facebook posting to promote BLENDS
+                            Program activities, events, and initiatives. Focused on engaging
+                            design and clear messaging to reach a wider audience.
+                        </li>
+                        <br>
+                        <h3>IT Intern (Feb 24 - May 24, 2025)</h3>
+                        <strong>Department of Trade and Industry (DTI)</strong>
+                        <li>Developed systems to support office operations and improve service
+                            efficiency using <strong>PHP Language</strong>.</li>
+                        <li>Collaborating with staff to identify process gaps and propose systembased solutions.
+                        </li>
+                        <br>
+                        <h3>Civil Service Exam Passer (March 02, 2025)</h3>
+                        <li>Passed the Civil Service Examination on March 2, 2025</li>
+                        <br>
+                        <h3>Co-Authored and Published Thesis (November 2024)</h3>
+                        <li>Published Thesis entitled “Understanding the Role of OLAP and OLTP
+                            in Managing and Interpreting Student Data for SEAIT Scholarship
+                            System”
+                        </li>
+                        <br>
+                        <h3>Hack For Gov 3 Participant (August 02, 2024)</h3>
+                        <li>Applied programming and problem-solving skills to address realworld cybersecurity
+                            challenges.
+                        </li>
+                        <br>
+                        <h3>Hack For Gov 2 Participant (September 1, 2023)</h3>
+                        <li>Gained exposure to ethical hacking concepts and best practices in
+                            securing applications.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
+
 
     <!-- PROJECTS -->
     <section id="projects">
@@ -78,12 +113,19 @@
     <!-- LIGHTBOX -->
     <div id="lightbox" class="lightbox">
         <span class="close">&times;</span>
-        <img class="lightbox-img" id="lightbox-img">
+        <div class="lightbox-content">
+            <img class="lightbox-img" id="lightbox-img">
+            <div class="lightbox-text">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
         <div class="lightbox-controls">
             <button id="prev">&#10094;</button>
             <button id="next">&#10095;</button>
         </div>
     </div>
+
 
     <!-- FOOTER -->
     <footer>

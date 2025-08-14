@@ -39,6 +39,8 @@ let currentImageIndex = 0;
 
 const lightbox = document.getElementById("lightbox");
 const lightboxImg = document.getElementById("lightbox-img");
+const lightboxTitle = document.getElementById("lightbox-title");
+const lightboxDescription = document.getElementById("lightbox-description");
 const closeBtn = document.querySelector(".close");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
@@ -46,13 +48,15 @@ const nextBtn = document.getElementById("next");
 function openLightbox(projectIndex, imageIndex) {
     currentProjectIndex = projectIndex;
     currentImageIndex = imageIndex;
-    updateLightboxImage();
+    updateLightboxContent();
     lightbox.style.display = "block";
 }
 
-function updateLightboxImage() {
+function updateLightboxContent() {
     const project = projects[currentProjectIndex];
     lightboxImg.src = project.images[currentImageIndex];
+    lightboxTitle.textContent = project.title;
+    lightboxDescription.textContent = project.description;
 }
 
 function closeLightbox() {
@@ -62,13 +66,13 @@ function closeLightbox() {
 function showPrevImage() {
     const project = projects[currentProjectIndex];
     currentImageIndex = (currentImageIndex - 1 + project.images.length) % project.images.length;
-    updateLightboxImage();
+    updateLightboxContent();
 }
 
 function showNextImage() {
     const project = projects[currentProjectIndex];
     currentImageIndex = (currentImageIndex + 1) % project.images.length;
-    updateLightboxImage();
+    updateLightboxContent();
 }
 
 // Event listeners
